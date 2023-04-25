@@ -1,0 +1,14 @@
+body{
+  background-color:#b3e6ff;
+  margin-top: 50px;
+}
+h1{
+  padding-top: 25px;
+  text-align: center;
+}
+img{
+  display: block;
+  position: absolute;
+  left:370px;
+  top:50px;
+}
