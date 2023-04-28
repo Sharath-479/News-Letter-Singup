@@ -1,16 +1,13 @@
-FROM node:14
+FROM node:12.2.0-alpine
 
 # Create a working directory for the app
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files to the container
-COPY package*.json ./
+# Copy the rest of the application files to the container
+COPY . .
 
 # Install the app's dependencies
 RUN npm install
-
-# Copy the rest of the application files to the container
-COPY . .
 
 # Expose the port that the app will listen on
 EXPOSE 3000
